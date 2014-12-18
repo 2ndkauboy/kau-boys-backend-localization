@@ -1,29 +1,35 @@
-=== Backend Localization ===
-Contributors: Kau-Boy
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7914504
-Tags: admin, backend, localization, english, l10n, i18n, translations, translation
-Requires at least: 3.2
-Stable tag: 2.1.3
-Tested up to: 3.4
+# Backend Localization #
+**Contributors:** Kau-Boy  
+**Donate link:** https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7914504  
+**Tags:** admin, backend, localization, english, l10n, i18n, translations, translation  
+**Requires at least:** 3.2  
+**Stable tag:** 2.1.3  
+**Tested up to:** 3.4  
 
 This plugin enables you to run your blog in a different language than the backend of your blog. So you can serve your blog using e.g. German as the default language for the users, but keep English as the language for the administration. 
 
-== Description ==
+## Description ##
 
 This plugin enables you to run your blog in a different language than the backend of your blog. So you can serve your blog using e.g. German as the default language for the users, but keep English as the language for the administration.
 You can choose the language you want to use from all installed language files or you can install additional languages.
 
 A list of all of my plugins can be found on the [WordPress Plugin page](http://kau-boys.com/wordpress-plugins "WordPress Plugins") on my blog [kau-boys.com](http://kau-boys.com). 
 
-== Screenshots ==
+## Screenshots ##
 
-1. Screenshot of the settings page
-2. Screenshot of language switcher in admin menu (similar to qTranslate switcher)
-3. Screenshot of language selection on login form
+### 1. Screenshot of the settings page ###
+![Screenshot of the settings page](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-1.png)
 
-== Installation ==
+### 2. Screenshot of language switcher in admin menu (similar to qTranslate switcher) ###
+![Screenshot of language switcher in admin menu (similar to qTranslate switcher)](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-2.png)
 
-= Installation through WordPress admin pages: = 
+### 3. Screenshot of language selection on login form ###
+![Screenshot of language selection on login form](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-3.png)
+
+
+## Installation ##
+
+### Installation through WordPress admin pages: ###
 
 1. Go to the admin page `Plugins -> Add New`
 2. Search for `kau-boy` and choose the plugin
@@ -32,7 +38,7 @@ A list of all of my plugins can be found on the [WordPress Plugin page](http://k
 5. Activate the plugin after install has finished (with the link or trough the plugin page)
 6. You might have to edit the settings, especially the language you want to use
 
-= Installation using WordPress admin pages: =
+### Installation using WordPress admin pages: ###
 
 1. Download the plugin zip file
 2. Go to the admin page `Plugins -> Add New`
@@ -41,7 +47,7 @@ A list of all of my plugins can be found on the [WordPress Plugin page](http://k
 5. Activate the plugin after install has finished (with the link or trough the plugin page)
 6. You might have to edit the settings, especially the language you want to use
 
-= Installation using ftp: =
+### Installation using ftp: ###
 
 1. Unzip und upload the files to your `/wp-content/plugins/` directory
 2. Activate the plugin through the `Plugins` menu in WordPress
@@ -49,18 +55,18 @@ A list of all of my plugins can be found on the [WordPress Plugin page](http://k
 
 
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
-= Will my language be available for this plugin? =
+### Will my language be available for this plugin? ###
 
 Every language that is supported by WordPress can be chosen. You just need a copy of the translation files in your WordPress' language folder.
 
-= Do I need this plugin if I use qTranslate? = 
+### Do I need this plugin if I use qTranslate? ###
 
 No you don't have to. I love qTranslate and use it for my own blog. qTranslate also offers the ability to switch the backend language. But if you don't want to publish the content of your blog in more than one language, you shouldn't use qTranslate. I created this plugin for users who only wan't to switch the backend language without the overhead of any multilingual plugin. 
 
    
-== Change Log ==
+## Change Log ##
 
 * **2.1.3** Adding flag for en_GB locale
 * **2.1.2** Fixing empty backend locale
