@@ -136,18 +136,19 @@
 		add_options_page( "Kau-Boy's Backend Localization settings", __( 'Backend Language', 'backend-localization' ), 'manage_options', 'backend_localization', 'backend_localization_admin_settings' );
 
 		$backend_locale_array = backend_localization_get_languages();
-		$backend_locale       = backend_localization_get_locale();
 
 		foreach ( $backend_locale_array as $locale_value ) {
 			$link = add_query_arg( 'kau-boys_backend_localization_language', $locale_value );
 			$link = ( strpos( $link, 'wp-admin/' ) === false ) ? preg_replace( '#[^?&]*/#i', '', $link ) : preg_replace( '#[^?&]*wp-admin/#i', '', $link );
+
 			if ( strpos( $link, '?' ) === 0 || strpos( $link, 'index.php?' ) === 0 ) {
 				if ( current_user_can( 'manage_options' ) ) {
 					$link = 'options-general.php?page=backend_localization&godashboard=1&kau-boys_backend_localization_language=' . $locale_value;
 				} else {
-					$link = 'edit.php?lang=' . $language;
+					$link = 'edit.php?lang=' . $locale_value;
 				}
 			}
+
 			add_menu_page( __( $wp_locale_all[ $locale_value ], 'backend_localization' ), $wp_locale_all[ $locale_value ], 'read', $link, null, BACKEND_LOCALIZATION_URL . 'flag_icons/' . strtolower( substr( $locale_value, ( strpos( $locale_value, '_' ) * - 1 ) ) ) . '.png' );
 		}
 	}
@@ -170,11 +171,14 @@
 	function backend_localization_admin_settings() {
 		global $wp_locale_all, $wp_version;
 
+		$settings_saved = false;
+
 		if ( isset( $_POST[ 'save' ] ) ) {
 			update_option( 'kau-boys_backend_localization_loginselect', $_POST[ 'kau-boys_backend_localization_loginselect' ] );
+			$settings_saved = true;
 		}
-		$loginselect = get_option( 'kau-boys_backend_localization_loginselect' );
 
+		$loginselect = get_option( 'kau-boys_backend_localization_loginselect' );
 		$backend_locale = backend_localization_get_locale();
 
 		// set default if values haven't been recieved from the database
@@ -192,7 +196,6 @@
 		?>
 
 		<div class="wrap">
-			<?php screen_icon(); ?>
 			<h2>Kau-Boy's Backend Localization</h2>
 			<?php if ( $settings_saved ) : ?>
 				<div id="message" class="updated fade">
@@ -207,21 +210,21 @@
 					<input type="checkbox" name="kau-boys_backend_localization_loginselect" id="kau-boys_backend_localization_loginselect"<?php echo ( $loginselect == 'on' ) ? ' checked="checked"' : '' ?>/>
 					<label for="kau-boys_backend_localization_loginselect"><?php _e( 'Hide language selection on login form', 'backend-localization' ) ?></label>
 				</p>
-				<p>
-				<h2><?php _e( 'Available languages', 'backend-localization' ) ?></h2>
-				<?php $backend_locale_array = backend_localization_get_languages() ?>
-				<?php foreach ( $backend_locale_array as $locale_value ) : ?>
-					<input type="radio" value="<?php echo esc_attr( $locale_value ) ?>" id="kau-boys_backend_localization_language_<?php echo esc_attr( $locale_value ) ?>" name="kau-boys_backend_localization_language"<?php echo ( $backend_locale == $locale_value ) ? ' checked="checked"' : '' ?> />
-					<label for="kau-boys_backend_localization_language_<?php echo esc_attr( $locale_value ) ?>" style="width: 200px; display: inline-block;">
-						<img src="<?php echo BACKEND_LOCALIZATION_URL . 'flag_icons/' . strtolower( substr( $locale_value, ( strpos( $locale_value, '_' ) * - 1 ) ) ) . '.png' ?>" alt="<?php echo esc_attr( $locale_value ) ?>" />
-						<?php echo esc_html( $wp_locale_all[ $locale_value ] . ' (' . $locale_value . ')' ) ?>
-					</label>
-					<br />
-				<?php endforeach ?>
-				<div class="description">
-					<?php echo sprintf( __( 'If your language isn\'t listed, you have to download the right version from the WordPress repository: <a href="http://svn.automattic.com/wordpress-i18n">http://svn.automattic.com/wordpress-i18n</a>. Browser to the language folder of your choice and get the <b>all</b> .mo files for your WordPress Version from <i><b>tags/%1s/messages/</b></i> or from the <i><b>trunk/messages/</b></i> folder. Upload them to the langauge folder <i>%2s</i>. You should than be able to choose the new language (or after a refresh of this page).', 'backend-localization' ), $wp_version, WP_LANG_DIR ) ?>
+				<div>
+					<h2><?php _e( 'Available languages', 'backend-localization' ) ?></h2>
+					<?php $backend_locale_array = backend_localization_get_languages() ?>
+					<?php foreach ( $backend_locale_array as $locale_value ) : ?>
+						<input type="radio" value="<?php echo esc_attr( $locale_value ) ?>" id="kau-boys_backend_localization_language_<?php echo esc_attr( $locale_value ) ?>" name="kau-boys_backend_localization_language"<?php echo ( $backend_locale == $locale_value ) ? ' checked="checked"' : '' ?> />
+						<label for="kau-boys_backend_localization_language_<?php echo esc_attr( $locale_value ) ?>" style="width: 200px; display: inline-block;">
+							<img src="<?php echo BACKEND_LOCALIZATION_URL . 'flag_icons/' . strtolower( substr( $locale_value, ( strpos( $locale_value, '_' ) * - 1 ) ) ) . '.png' ?>" alt="<?php echo esc_attr( $locale_value ) ?>" />
+							<?php echo esc_html( $wp_locale_all[ $locale_value ] . ' (' . $locale_value . ')' ) ?>
+						</label>
+						<br />
+					<?php endforeach ?>
+					<div class="description">
+						<?php echo sprintf( __( 'If your language isn\'t listed, you have to download the right version from the WordPress repository: <a href="http://svn.automattic.com/wordpress-i18n">http://svn.automattic.com/wordpress-i18n</a>. Browser to the language folder of your choice and get the <b>all</b> .mo files for your WordPress Version from <i><b>tags/%1s/messages/</b></i> or from the <i><b>trunk/messages/</b></i> folder. Upload them to the langauge folder <i>%2s</i>. You should than be able to choose the new language (or after a refresh of this page).', 'backend-localization' ), $wp_version, WP_LANG_DIR ) ?>
+					</div>
 				</div>
-				</p>
 				<p class="submit">
 					<input class="button-primary" name="save" type="submit" value="<?php _e( 'Save Changes' ) ?>" />
 				</p>
@@ -301,7 +304,7 @@
 	}
 
 	function localize_backend( $locale ) {
-		// set langauge if user is in admin area
+		// set language if user is in admin area
 		if ( defined( 'WP_ADMIN' ) || ( isset( $_REQUEST[ 'pwd' ] ) && isset( $_REQUEST[ 'kau-boys_backend_localization_language' ] ) ) ) {
 			// ajax call from frontend
 			if ( 'admin-ajax.php' == basename( $_SERVER[ 'SCRIPT_FILENAME' ] ) && strpos( $_SERVER[ 'HTTP_REFERER' ], admin_url() ) === false ) {
