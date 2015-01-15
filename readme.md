@@ -3,8 +3,8 @@
 **Donate link:** https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7914504  
 **Tags:** admin, backend, localization, english, l10n, i18n, translations, translation  
 **Requires at least:** 3.2  
-**Stable tag:** 2.1.3  
-**Tested up to:** 3.4  
+**Stable tag:** 2.1.5  
+**Tested up to:** 4.1  
 
 This plugin enables you to run your blog in a different language than the backend of your blog. So you can serve your blog using e.g. German as the default language for the users, but keep English as the language for the administration. 
 
@@ -68,6 +68,12 @@ No you don't have to. I love qTranslate and use it for my own blog. qTranslate a
    
 ## Change Log ##
 
+### 2.1.5 ###
+* Adding 27 new languages
+* Time invested for this release: 80min
+
+### Older releases ###
+* **2.1.4** Fixing "tested up to" value
 * **2.1.3** Adding flag for en_GB locale
 * **2.1.2** Fixing empty backend locale
 * **2.1.1** Fixing detection of AJAX calls from backend
