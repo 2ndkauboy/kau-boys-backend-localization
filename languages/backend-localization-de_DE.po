@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Generator: Poedit 1.7.3\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-0: ..\n"
 
 #: backend_localization.php:25
 msgid "Afrikaans"

@@ -1,0 +1,604 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: backend-localization\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/kau-boys-backend-"
+"localization\n"
+"POT-Creation-Date: 2015-04-17 11:05+0100\n"
+"PO-Revision-Date: 2015-04-17 11:05+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../backend_localization.php:25
+msgid "Afrikaans"
+msgstr ""
+
+#: ../backend_localization.php:26
+msgid "Amharic"
+msgstr ""
+
+#: ../backend_localization.php:27
+msgid "Aragonese"
+msgstr ""
+
+#: ../backend_localization.php:28
+msgid "Arabic"
+msgstr ""
+
+#: ../backend_localization.php:29
+msgid "Assamese"
+msgstr ""
+
+#: ../backend_localization.php:30
+msgid "Azerbaijani"
+msgstr ""
+
+#: ../backend_localization.php:31
+msgid "Azerbaijani (Turkey)"
+msgstr ""
+
+#: ../backend_localization.php:32
+msgid "South Azerbaijani"
+msgstr ""
+
+#: ../backend_localization.php:33
+msgid "Balochi Southern"
+msgstr ""
+
+#: ../backend_localization.php:34
+msgid "Belarusian"
+msgstr ""
+
+#: ../backend_localization.php:35
+msgid "Bulgarian"
+msgstr ""
+
+#: ../backend_localization.php:36
+msgid "Bengali"
+msgstr ""
+
+#: ../backend_localization.php:37
+msgid "Tibetan"
+msgstr ""
+
+#: ../backend_localization.php:38
+msgid "Bosnian"
+msgstr ""
+
+#: ../backend_localization.php:39
+msgid "Catalan"
+msgstr ""
+
+#: ../backend_localization.php:40 ../backend_localization.php:95
+msgid "Kurdish"
+msgstr ""
+
+#: ../backend_localization.php:41
+msgid "Corsican"
+msgstr ""
+
+#: ../backend_localization.php:42
+msgid "Cape Verdean Creole"
+msgstr ""
+
+#: ../backend_localization.php:43
+msgid "Czech"
+msgstr ""
+
+#: ../backend_localization.php:44
+msgid "Cymraeg (Welsh)"
+msgstr ""
+
+#: ../backend_localization.php:45
+msgid "Danish"
+msgstr ""
+
+#: ../backend_localization.php:46
+msgid "German"
+msgstr ""
+
+#: ../backend_localization.php:47
+msgid "German (Switzerland)"
+msgstr ""
+
+#: ../backend_localization.php:48
+msgid "Divehi/Maldivian"
+msgstr ""
+
+#: ../backend_localization.php:49
+msgid "Greek"
+msgstr ""
+
+#: ../backend_localization.php:50
+msgid "English (Australia)"
+msgstr ""
+
+#: ../backend_localization.php:51
+msgid "English"
+msgstr ""
+
+#: ../backend_localization.php:52
+msgid "English (Canada)"
+msgstr ""
+
+#: ../backend_localization.php:53
+msgid "English (United Kingdom)"
+msgstr ""
+
+#: ../backend_localization.php:54
+msgid "Esperanto"
+msgstr ""
+
+#: ../backend_localization.php:55
+msgid "Spanish (Argentina)"
+msgstr ""
+
+#: ../backend_localization.php:56
+msgid "Spanish (Chile)"
+msgstr ""
+
+#: ../backend_localization.php:57
+msgid "Spanish"
+msgstr ""
+
+#: ../backend_localization.php:58
+msgid "Spanish (Mexico)"
+msgstr ""
+
+#: ../backend_localization.php:59
+msgid "Spanish (Peru)"
+msgstr ""
+
+#: ../backend_localization.php:60
+msgid "Spanish (Venezuela)"
+msgstr ""
+
+#: ../backend_localization.php:61
+msgid "Estonian"
+msgstr ""
+
+#: ../backend_localization.php:62
+msgid "Basque"
+msgstr ""
+
+#: ../backend_localization.php:63
+msgid "Persian (Afghanistan)"
+msgstr ""
+
+#: ../backend_localization.php:64
+msgid "Persian"
+msgstr ""
+
+#: ../backend_localization.php:65
+msgid "Finnish"
+msgstr ""
+
+#: ../backend_localization.php:66
+msgid "Faroese"
+msgstr ""
+
+#: ../backend_localization.php:67
+msgid "French (Belgium)"
+msgstr ""
+
+#: ../backend_localization.php:68
+msgid "French"
+msgstr ""
+
+#: ../backend_localization.php:69
+msgid "Fulah"
+msgstr ""
+
+#: ../backend_localization.php:70
+msgid "Western Frisian"
+msgstr ""
+
+#: ../backend_localization.php:71
+msgid "Gaeilge/Irish"
+msgstr ""
+
+#: ../backend_localization.php:72
+msgid "Scottish Gaelic"
+msgstr ""
+
+#: ../backend_localization.php:73
+msgid "Galician"
+msgstr ""
+
+#: ../backend_localization.php:74
+msgid "Swiss German"
+msgstr ""
+
+#: ../backend_localization.php:75
+msgid "Gujarati"
+msgstr ""
+
+#: ../backend_localization.php:76
+msgid "Hawaiian"
+msgstr ""
+
+#: ../backend_localization.php:77
+msgid "Hazaragi"
+msgstr ""
+
+#: ../backend_localization.php:78
+msgid "Hebrew"
+msgstr ""
+
+#: ../backend_localization.php:79
+msgid "Hindi"
+msgstr ""
+
+#: ../backend_localization.php:80
+msgid "Croatian"
+msgstr ""
+
+#: ../backend_localization.php:81
+msgid "Hungarian"
+msgstr ""
+
+#: ../backend_localization.php:82
+msgid "Armenian"
+msgstr ""
+
+#: ../backend_localization.php:83
+msgid "Indonesian"
+msgstr ""
+
+#: ../backend_localization.php:84
+msgid "Ido"
+msgstr ""
+
+#: ../backend_localization.php:85
+msgid "Icelandic"
+msgstr ""
+
+#: ../backend_localization.php:86
+msgid "Italian"
+msgstr ""
+
+#: ../backend_localization.php:87
+msgid "Japanese"
+msgstr ""
+
+#: ../backend_localization.php:88
+msgid "Javanese"
+msgstr ""
+
+#: ../backend_localization.php:89
+msgid "Georgian"
+msgstr ""
+
+#: ../backend_localization.php:90
+msgid "Kabuverdianu"
+msgstr ""
+
+#: ../backend_localization.php:91
+msgid "Kinyarwanda"
+msgstr ""
+
+#: ../backend_localization.php:92
+msgid "Kazakh"
+msgstr ""
+
+#: ../backend_localization.php:93
+msgid "Kannada"
+msgstr ""
+
+#: ../backend_localization.php:94
+msgid "Korean"
+msgstr ""
+
+#: ../backend_localization.php:96
+msgid "Kyrgyz"
+msgstr ""
+
+#: ../backend_localization.php:97
+msgid "Latin"
+msgstr ""
+
+#: ../backend_localization.php:98
+msgid "Limburgish"
+msgstr ""
+
+#: ../backend_localization.php:99
+msgid "Lao"
+msgstr ""
+
+#: ../backend_localization.php:100
+msgid "Lithuanian"
+msgstr ""
+
+#: ../backend_localization.php:101
+msgid "Latvian"
+msgstr ""
+
+#: ../backend_localization.php:102
+msgid "Montenegrin"
+msgstr ""
+
+#: ../backend_localization.php:103
+msgid "Malagasy"
+msgstr ""
+
+#: ../backend_localization.php:104
+msgid "Macedonian"
+msgstr ""
+
+#: ../backend_localization.php:105
+msgid "Malayalam"
+msgstr ""
+
+#: ../backend_localization.php:106
+msgid "Mongolian"
+msgstr ""
+
+#: ../backend_localization.php:107
+msgid "Marathi"
+msgstr ""
+
+#: ../backend_localization.php:108
+msgid "Maori"
+msgstr ""
+
+#: ../backend_localization.php:109
+msgid "Malay"
+msgstr ""
+
+#: ../backend_localization.php:110
+msgid "Burmese (Myanmar)"
+msgstr ""
+
+#: ../backend_localization.php:111
+msgid "Norwegian (Bokm&aring;l)"
+msgstr ""
+
+#: ../backend_localization.php:112
+msgid "Nepali"
+msgstr ""
+
+#: ../backend_localization.php:113
+msgid "Dutch"
+msgstr ""
+
+#: ../backend_localization.php:114
+msgid "Dutch (Belgium)"
+msgstr ""
+
+#: ../backend_localization.php:115
+msgid "Dutch (Netherlands)"
+msgstr ""
+
+#: ../backend_localization.php:116
+msgid "Norwegian (Nynorsk)"
+msgstr ""
+
+#: ../backend_localization.php:117
+msgid "Oriya"
+msgstr ""
+
+#: ../backend_localization.php:118
+msgid "Ossetic/Ossetian"
+msgstr ""
+
+#: ../backend_localization.php:119
+msgid "Punjabi"
+msgstr ""
+
+#: ../backend_localization.php:120
+msgid "Papiamento"
+msgstr ""
+
+#: ../backend_localization.php:121
+msgid "Polish"
+msgstr ""
+
+#: ../backend_localization.php:122
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: ../backend_localization.php:123
+msgid "Portuguese"
+msgstr ""
+
+#: ../backend_localization.php:124
+msgid "Rohingya"
+msgstr ""
+
+#: ../backend_localization.php:125
+msgid "Romanian"
+msgstr ""
+
+#: ../backend_localization.php:126
+msgid "Russian"
+msgstr ""
+
+#: ../backend_localization.php:127
+msgid "Russian (Ukraine)"
+msgstr ""
+
+#: ../backend_localization.php:128
+msgid "Sanskrit"
+msgstr ""
+
+#: ../backend_localization.php:129
+msgid "Sakha"
+msgstr ""
+
+#: ../backend_localization.php:130
+msgid "Sindhi"
+msgstr ""
+
+#: ../backend_localization.php:131
+msgid "Sinhalese"
+msgstr ""
+
+#: ../backend_localization.php:132
+msgid "Slovak"
+msgstr ""
+
+#: ../backend_localization.php:133
+msgid "Slovenian"
+msgstr ""
+
+#: ../backend_localization.php:134
+msgid "Somali"
+msgstr ""
+
+#: ../backend_localization.php:135
+msgid "Albanian"
+msgstr ""
+
+#: ../backend_localization.php:136
+msgid "Serbian"
+msgstr ""
+
+#: ../backend_localization.php:137
+msgid "Sardinian"
+msgstr ""
+
+#: ../backend_localization.php:138
+msgid "Sundanese"
+msgstr ""
+
+#: ../backend_localization.php:139
+msgid "Swedish"
+msgstr ""
+
+#: ../backend_localization.php:140
+msgid "Swahili"
+msgstr ""
+
+#: ../backend_localization.php:141
+msgid "Tamil"
+msgstr ""
+
+#: ../backend_localization.php:142
+msgid "Tamil (Sri Lanka)"
+msgstr ""
+
+#: ../backend_localization.php:143
+msgid "Telugu"
+msgstr ""
+
+#: ../backend_localization.php:144
+msgid "Tajik"
+msgstr ""
+
+#: ../backend_localization.php:145
+msgid "Thai"
+msgstr ""
+
+#: ../backend_localization.php:146
+msgid "Tagalog"
+msgstr ""
+
+#: ../backend_localization.php:147
+msgid "Turkish"
+msgstr ""
+
+#: ../backend_localization.php:148
+msgid "Tatar"
+msgstr ""
+
+#: ../backend_localization.php:149
+msgid "Turkmen"
+msgstr ""
+
+#: ../backend_localization.php:150
+msgid "Tamazight (Central Atlas)"
+msgstr ""
+
+#: ../backend_localization.php:151
+msgid "Uighur"
+msgstr ""
+
+#: ../backend_localization.php:152
+msgid "Ukrainian"
+msgstr ""
+
+#: ../backend_localization.php:153
+msgid "Urdu"
+msgstr ""
+
+#: ../backend_localization.php:154
+msgid "Uzbek"
+msgstr ""
+
+#: ../backend_localization.php:155
+msgid "Vietnamese"
+msgstr ""
+
+#: ../backend_localization.php:156
+msgid "Chinese"
+msgstr ""
+
+#: ../backend_localization.php:157
+msgid "Chinese (Hong Kong)"
+msgstr ""
+
+#: ../backend_localization.php:158
+msgid "Chinese (Taiwan)"
+msgstr ""
+
+#: ../backend_localization.php:165
+msgid "Backend Language"
+msgstr ""
+
+#: ../backend_localization.php:193
+msgid "Settings"
+msgstr ""
+
+#: ../backend_localization.php:220
+msgid "Switching Language"
+msgstr ""
+
+#: ../backend_localization.php:221
+#, php-format
+msgid ""
+"Switching language to %1$s... If the Dashboard isn't loading, use this <a "
+"href=\"%2$s\" title=\"Dashboard\">link</a>."
+msgstr ""
+
+#: ../backend_localization.php:231
+msgid "Options saved."
+msgstr ""
+
+#: ../backend_localization.php:235
+msgid "Here you can customize the plugin for your needs."
+msgstr ""
+
+#: ../backend_localization.php:240
+msgid "Hide language selection on login form"
+msgstr ""
+
+#: ../backend_localization.php:243
+msgid "Available languages"
+msgstr ""
+
+#: ../backend_localization.php:254
+#, php-format
+msgid ""
+"If your language isn't listed, you have to download the right version from "
+"the WordPress repository: <a href=\"http://svn.automattic.com/wordpress-i18n"
+"\">http://svn.automattic.com/wordpress-i18n</a>. Browser to the language "
+"folder of your choice and get the <b>all</b> .mo files for your WordPress "
+"Version from <i><b>tags/%1s/messages/</b></i> or from the <i><b>trunk/"
+"messages/</b></i> folder. Upload them to the langauge folder <i>%2s</i>. You "
+"should than be able to choose the new language (or after a refresh of this "
+"page)."
+msgstr ""
+
+#: ../backend_localization.php:258
+msgid "Save Changes"
+msgstr ""
+
+#: ../backend_localization.php:314
+msgid "Language"
+msgstr ""

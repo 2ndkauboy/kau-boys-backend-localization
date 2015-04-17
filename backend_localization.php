@@ -17,7 +17,7 @@
 	function init_backend_localization() {
 		global $wp_locale_all;
 
-		load_plugin_textdomain( 'backend-localization', false, dirname( plugin_basename( __FILE__ ) ) );
+		load_plugin_textdomain( 'backend-localization', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 		// locales available in the I18n repository: http://svn.automattic.com/wordpress-i18n/
 		// Names lookup: http://svn.glotpress.org/trunk/locales/locales.php, http://www-01.sil.org/iso639-3/codes.asp
