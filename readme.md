@@ -18,13 +18,13 @@ A list of all of my plugins can be found on the [WordPress Plugin page](http://k
 ## Screenshots ##
 
 ### 1. Screenshot of the settings page ###
-![Screenshot of the settings page](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-1.png)
+![Screenshot of the settings page](https://raw.githubusercontent.com/2ndkauboy/kau-boys-backend-localization/master/assets/screenshot-1.png)
 
 ### 2. Screenshot of language switcher in admin menu (similar to qTranslate switcher) ###
-![Screenshot of language switcher in admin menu (similar to qTranslate switcher)](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-2.png)
+![Screenshot of language switcher in admin menu (similar to qTranslate switcher)](https://raw.githubusercontent.com/2ndkauboy/kau-boys-backend-localization/master/assets/screenshot-2.png)
 
 ### 3. Screenshot of language selection on login form ###
-![Screenshot of language selection on login form](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-3.png)
+![Screenshot of language selection on login form](https://raw.githubusercontent.com/2ndkauboy/kau-boys-backend-localization/master/assets/screenshot-3.png)
 
 
 ## Installation ##
