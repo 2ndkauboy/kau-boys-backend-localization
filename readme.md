@@ -3,7 +3,7 @@
 **Donate link:** https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7914504  
 **Tags:** admin, backend, localization, english, l10n, i18n, translations, translation  
 **Requires at least:** 3.2  
-**Stable tag:** 2.1.6  
+**Stable tag:** 2.1.7  
 **Tested up to:** 4.1  
 
 This plugin enables you to run your blog in a different language than the backend of your blog. So you can serve your blog using e.g. German as the default language for the users, but keep English as the language for the administration. 
@@ -18,13 +18,13 @@ A list of all of my plugins can be found on the [WordPress Plugin page](http://k
 ## Screenshots ##
 
 ### 1. Screenshot of the settings page ###
-![Screenshot of the settings page](https://raw.githubusercontent.com/2ndkauboy/kau-boys-backend-localization/master/assets/screenshot-1.png)
+![Screenshot of the settings page](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-1.png)
 
 ### 2. Screenshot of language switcher in admin menu (similar to qTranslate switcher) ###
-![Screenshot of language switcher in admin menu (similar to qTranslate switcher)](https://raw.githubusercontent.com/2ndkauboy/kau-boys-backend-localization/master/assets/screenshot-2.png)
+![Screenshot of language switcher in admin menu (similar to qTranslate switcher)](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-2.png)
 
 ### 3. Screenshot of language selection on login form ###
-![Screenshot of language selection on login form](https://raw.githubusercontent.com/2ndkauboy/kau-boys-backend-localization/master/assets/screenshot-3.png)
+![Screenshot of language selection on login form](https://raw.githubusercontent.com/2ndkauboy/backend-localization/master/assets/screenshot-3.png)
 
 
 ## Installation ##
@@ -67,6 +67,10 @@ No you don't have to. I love qTranslate and use it for my own blog. qTranslate a
 
    
 ## Change Log ##
+
+### 2.1.7 ###
+* Fixing a undefined notice
+* Time invested for this release: 10min
 
 ### 2.1.6 ###
 * Fixing some flags
