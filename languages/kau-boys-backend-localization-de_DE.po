@@ -1,0 +1,621 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kau-boys-backend-localization\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-24 23:29+0100\n"
+"PO-Revision-Date: 2016-01-24 23:30+0100\n"
+"Last-Translator: Bernhard Kau <bernhard@kau-boys.de>\n"
+"Language-Team: Bernhard Kau <bernhard@kau-boys.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../backend_localization.php:143
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../backend_localization.php:167
+msgid "Language"
+msgstr "Sprache"
+
+#: ../backend_localization.php:184 ../backend_localization.php:185
+msgid "Backend Localization Settings"
+msgstr "Backend Sprache Einstellungen"
+
+#: ../backend_localization.php:191
+msgid "Backend Language"
+msgstr "Backend Sprache"
+
+#: ../backend_localization.php:233
+msgid "Switching Language"
+msgstr "Sprache wechseln"
+
+#: ../backend_localization.php:234
+#, php-format
+msgid ""
+"Switching language to %1$s... If the Dashboard isn't loading, use this <a "
+"href=\"%2$s\" title=\"Dashboard\">link</a>."
+msgstr ""
+"Wechsele Sprache zu %1$s... Wenn der Dashboard nicht laden sollte, klicke<a "
+"href=\"%2$s\" title=\"Dashboard\">hier</a>."
+
+#: ../backend_localization.php:244
+msgid "Options saved."
+msgstr "Einstellungen gespeichert."
+
+#: ../backend_localization.php:248
+msgid "Here you can customize the plugin for your needs."
+msgstr "Hier können Sie das Plugin an Ihre eigenen Bedürfnisse anpassen."
+
+#: ../backend_localization.php:254
+msgid "Hide language selection on login form"
+msgstr "Sprachen-Auswahl im Anmeldeformular verbergen"
+
+#: ../backend_localization.php:258
+msgid "Available languages"
+msgstr "Verfügbare Sprachen"
+
+#: ../backend_localization.php:269
+msgid "Save Changes"
+msgstr "Änderungen übernehmen"
+
+#: ../inc/class-locales.php:7
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: ../inc/class-locales.php:8
+msgid "Amharic"
+msgstr "Amharisch"
+
+#: ../inc/class-locales.php:9
+msgid "Aragonese"
+msgstr "Aragonesisch"
+
+#: ../inc/class-locales.php:10
+msgid "Arabic"
+msgstr "Arabisch"
+
+#: ../inc/class-locales.php:11
+msgid "Assamese"
+msgstr "Asamiya"
+
+#: ../inc/class-locales.php:12
+msgid "Azerbaijani"
+msgstr "Azerbaijani"
+
+#: ../inc/class-locales.php:13
+msgid "Azerbaijani (Turkey)"
+msgstr "Azerbaijani (Türkei)"
+
+#: ../inc/class-locales.php:14
+msgid "South Azerbaijani"
+msgstr "Südaserbaidschanisch"
+
+#: ../inc/class-locales.php:15
+msgid "Balochi Southern"
+msgstr "Balochi Süd"
+
+#: ../inc/class-locales.php:16
+msgid "Belarusian"
+msgstr "Weißrussisch"
+
+#: ../inc/class-locales.php:17
+msgid "Bulgarian"
+msgstr "Bulgarisch"
+
+#: ../inc/class-locales.php:18
+msgid "Bengali"
+msgstr "Bengalisch"
+
+#: ../inc/class-locales.php:19
+msgid "Tibetan"
+msgstr "Tibetisch"
+
+#: ../inc/class-locales.php:20
+msgid "Bosnian"
+msgstr "Bosnisch"
+
+#: ../inc/class-locales.php:21
+msgid "Catalan"
+msgstr "Katalanisch"
+
+#: ../inc/class-locales.php:22 ../inc/class-locales.php:78
+msgid "Kurdish"
+msgstr "Kurdisch"
+
+#: ../inc/class-locales.php:23
+msgid "Corsican"
+msgstr "Korsisch"
+
+#: ../inc/class-locales.php:24
+msgid "Cape Verdean Creole"
+msgstr "Kapverdisches Kreol"
+
+#: ../inc/class-locales.php:25
+msgid "Czech"
+msgstr "Tschechisch"
+
+#: ../inc/class-locales.php:26
+msgid "Cymraeg (Welsh)"
+msgstr "Cymraeg (Walisisch)"
+
+#: ../inc/class-locales.php:27
+msgid "Danish"
+msgstr "Dänisch"
+
+#: ../inc/class-locales.php:28
+msgid "German"
+msgstr "Deutsch"
+
+#: ../inc/class-locales.php:29
+msgid "German (formal)"
+msgstr "Deutsch (Sie)"
+
+#: ../inc/class-locales.php:30
+msgid "German (Switzerland)"
+msgstr "Schwizerdütsch"
+
+#: ../inc/class-locales.php:31
+msgid "Divehi/Maldivian"
+msgstr "Dhivehi"
+
+#: ../inc/class-locales.php:32
+msgid "Greek"
+msgstr "Griechisch"
+
+#: ../inc/class-locales.php:33
+msgid "English (Australia)"
+msgstr "Englisch (Australien)"
+
+#: ../inc/class-locales.php:34
+msgid "English"
+msgstr "Englisch"
+
+#: ../inc/class-locales.php:35
+msgid "English (Canada)"
+msgstr "Englisch (Kanada)"
+
+#: ../inc/class-locales.php:36
+msgid "English (United Kingdom)"
+msgstr "Englisch (Vereinigtes Königreich)"
+
+#: ../inc/class-locales.php:37
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: ../inc/class-locales.php:38
+msgid "Spanish (Argentina)"
+msgstr "Spanisch (Argentinien)"
+
+#: ../inc/class-locales.php:39
+msgid "Spanish (Chile)"
+msgstr "Spanisch (Chile)"
+
+#: ../inc/class-locales.php:40
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: ../inc/class-locales.php:41
+msgid "Spanish (Mexico)"
+msgstr "Spanisch (Mexiko)"
+
+#: ../inc/class-locales.php:42
+msgid "Spanish (Peru)"
+msgstr "Spanisch (Peru)"
+
+#: ../inc/class-locales.php:43
+msgid "Spanish (Venezuela)"
+msgstr "Spanisch (Venezuela)"
+
+#: ../inc/class-locales.php:44
+msgid "Estonian"
+msgstr "Estnisch"
+
+#: ../inc/class-locales.php:45
+msgid "Basque"
+msgstr "Baskische"
+
+#: ../inc/class-locales.php:46
+msgid "Persian (Afghanistan)"
+msgstr "Persisch (Afghanistan)"
+
+#: ../inc/class-locales.php:47
+msgid "Persian"
+msgstr "Persisch"
+
+#: ../inc/class-locales.php:48
+msgid "Finnish"
+msgstr "Finnisch"
+
+#: ../inc/class-locales.php:49
+msgid "Faroese"
+msgstr "Färöisch"
+
+#: ../inc/class-locales.php:50
+msgid "French (Belgium)"
+msgstr "Französisch (Belgien)"
+
+#: ../inc/class-locales.php:51
+msgid "French"
+msgstr "Französisch"
+
+#: ../inc/class-locales.php:52
+msgid "Fulah"
+msgstr "Fulfulde"
+
+#: ../inc/class-locales.php:53
+msgid "Western Frisian"
+msgstr "Westfriesisch"
+
+#: ../inc/class-locales.php:54
+msgid "Gaeilge/Irish"
+msgstr "Gaeilge/Irisch"
+
+#: ../inc/class-locales.php:55
+msgid "Scottish Gaelic"
+msgstr "Schottisch-Gälisch"
+
+#: ../inc/class-locales.php:56
+msgid "Galician"
+msgstr "Galizisch"
+
+#: ../inc/class-locales.php:57
+msgid "Swiss German"
+msgstr "Schweizerdeutsch"
+
+#: ../inc/class-locales.php:58
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: ../inc/class-locales.php:59
+msgid "Hawaiian"
+msgstr "Hawaiisch"
+
+#: ../inc/class-locales.php:60
+msgid "Hazaragi"
+msgstr "Hazaragi"
+
+#: ../inc/class-locales.php:61
+msgid "Hebrew"
+msgstr "Hebräisch"
+
+#: ../inc/class-locales.php:62
+msgid "Hindi"
+msgstr "Hindi"
+
+#: ../inc/class-locales.php:63
+msgid "Croatian"
+msgstr "Kroatisch"
+
+#: ../inc/class-locales.php:64
+msgid "Hungarian"
+msgstr "Ungarisch"
+
+#: ../inc/class-locales.php:65
+msgid "Armenian"
+msgstr "Armenisch"
+
+#: ../inc/class-locales.php:66
+msgid "Indonesian"
+msgstr "Indonesisch"
+
+#: ../inc/class-locales.php:67
+msgid "Ido"
+msgstr "Ido"
+
+#: ../inc/class-locales.php:68
+msgid "Icelandic"
+msgstr "Isländisch"
+
+#: ../inc/class-locales.php:69
+msgid "Italian"
+msgstr "Italienisch"
+
+#: ../inc/class-locales.php:70
+msgid "Japanese"
+msgstr "Japanisch"
+
+#: ../inc/class-locales.php:71
+msgid "Javanese"
+msgstr "Javanisch"
+
+#: ../inc/class-locales.php:72
+msgid "Georgian"
+msgstr "Georgisch"
+
+#: ../inc/class-locales.php:73
+msgid "Kabuverdianu"
+msgstr "Kabuverdianu"
+
+#: ../inc/class-locales.php:74
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: ../inc/class-locales.php:75
+msgid "Kazakh"
+msgstr "Kasachisch"
+
+#: ../inc/class-locales.php:76
+msgid "Kannada"
+msgstr "Kannada"
+
+#: ../inc/class-locales.php:77
+msgid "Korean"
+msgstr "Koreanisch"
+
+#: ../inc/class-locales.php:79
+msgid "Kyrgyz"
+msgstr "Kirgisische"
+
+#: ../inc/class-locales.php:80
+msgid "Latin"
+msgstr "Latein"
+
+#: ../inc/class-locales.php:81
+msgid "Limburgish"
+msgstr "Limburgisch"
+
+#: ../inc/class-locales.php:82
+msgid "Lao"
+msgstr "Laotisch"
+
+#: ../inc/class-locales.php:83
+msgid "Lithuanian"
+msgstr "Litauisch"
+
+#: ../inc/class-locales.php:84
+msgid "Latvian"
+msgstr "Lettisch"
+
+#: ../inc/class-locales.php:85
+msgid "Montenegrin"
+msgstr "Montenegrinisch"
+
+#: ../inc/class-locales.php:86
+msgid "Malagasy"
+msgstr "Malagasy"
+
+#: ../inc/class-locales.php:87
+msgid "Macedonian"
+msgstr "Mazedonisch"
+
+#: ../inc/class-locales.php:88
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: ../inc/class-locales.php:89
+msgid "Mongolian"
+msgstr "Mongolisch"
+
+#: ../inc/class-locales.php:90
+msgid "Marathi"
+msgstr "Marathi"
+
+#: ../inc/class-locales.php:91
+msgid "Maori"
+msgstr "Māori"
+
+#: ../inc/class-locales.php:92
+msgid "Malay"
+msgstr "Malaiisch"
+
+#: ../inc/class-locales.php:93
+msgid "Burmese (Myanmar)"
+msgstr "Birmanisch (Myanmar)"
+
+#: ../inc/class-locales.php:94
+msgid "Norwegian (Bokm&aring;l)"
+msgstr "Norwegisch (Bokm&aring;l)"
+
+#: ../inc/class-locales.php:95
+msgid "Nepali"
+msgstr "Nepali"
+
+#: ../inc/class-locales.php:96
+msgid "Dutch"
+msgstr "Niederländisch"
+
+#: ../inc/class-locales.php:97
+msgid "Dutch (Belgium)"
+msgstr "Niederländisch (Belgien)"
+
+#: ../inc/class-locales.php:98
+msgid "Dutch (Netherlands)"
+msgstr "Niederländisch (Niederlande)"
+
+#: ../inc/class-locales.php:99
+msgid "Norwegian (Nynorsk)"
+msgstr "Norwegisch (Nynorsk)"
+
+#: ../inc/class-locales.php:100
+msgid "Oriya"
+msgstr "Oriya"
+
+#: ../inc/class-locales.php:101
+msgid "Ossetic/Ossetian"
+msgstr "Ossetisch"
+
+#: ../inc/class-locales.php:102
+msgid "Punjabi"
+msgstr "Panjabi"
+
+#: ../inc/class-locales.php:103
+msgid "Papiamento"
+msgstr "Papiamentu"
+
+#: ../inc/class-locales.php:104
+msgid "Polish"
+msgstr "Polnisch"
+
+#: ../inc/class-locales.php:105
+msgid "Portuguese (Brazil)"
+msgstr "Portugiesisch (Brasilien)"
+
+#: ../inc/class-locales.php:106
+msgid "Portuguese"
+msgstr "Portugiesisch"
+
+#: ../inc/class-locales.php:107
+msgid "Rohingya"
+msgstr "Rohingya"
+
+#: ../inc/class-locales.php:108
+msgid "Romanian"
+msgstr "Rumänisch"
+
+#: ../inc/class-locales.php:109
+msgid "Russian"
+msgstr "Russisch"
+
+#: ../inc/class-locales.php:110
+msgid "Russian (Ukraine)"
+msgstr "Russisch (Ukraine)"
+
+#: ../inc/class-locales.php:111
+msgid "Sanskrit"
+msgstr "Sanskrit"
+
+#: ../inc/class-locales.php:112
+msgid "Sakha"
+msgstr "Jakutisch"
+
+#: ../inc/class-locales.php:113
+msgid "Sindhi"
+msgstr "Sindhi"
+
+#: ../inc/class-locales.php:114
+msgid "Sinhalese"
+msgstr "Singhalesisch"
+
+#: ../inc/class-locales.php:115
+msgid "Slovak"
+msgstr "Slowakisch"
+
+#: ../inc/class-locales.php:116
+msgid "Slovenian"
+msgstr "Slowenisch"
+
+#: ../inc/class-locales.php:117
+msgid "Somali"
+msgstr "Somali"
+
+#: ../inc/class-locales.php:118
+msgid "Albanian"
+msgstr "Albanisch"
+
+#: ../inc/class-locales.php:119
+msgid "Serbian"
+msgstr "Serbisch"
+
+#: ../inc/class-locales.php:120
+msgid "Sardinian"
+msgstr "Sardisch"
+
+#: ../inc/class-locales.php:121
+msgid "Sundanese"
+msgstr "Sundanesisch"
+
+#: ../inc/class-locales.php:122
+msgid "Swedish"
+msgstr "Schwedisch"
+
+#: ../inc/class-locales.php:123
+msgid "Swahili"
+msgstr "Suaheli"
+
+#: ../inc/class-locales.php:124
+msgid "Tamil"
+msgstr "Tamilisch"
+
+#: ../inc/class-locales.php:125
+msgid "Tamil (Sri Lanka)"
+msgstr "Tamilisch (Sri Lanka)"
+
+#: ../inc/class-locales.php:126
+msgid "Telugu"
+msgstr "Telugu"
+
+#: ../inc/class-locales.php:127
+msgid "Tajik"
+msgstr "Tadschikisch"
+
+#: ../inc/class-locales.php:128
+msgid "Thai"
+msgstr "Thai"
+
+#: ../inc/class-locales.php:129
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: ../inc/class-locales.php:130
+msgid "Turkish"
+msgstr "Türkisch"
+
+#: ../inc/class-locales.php:131
+msgid "Tatar"
+msgstr "Tatarisch"
+
+#: ../inc/class-locales.php:132
+msgid "Turkmen"
+msgstr "Turkmenisch"
+
+#: ../inc/class-locales.php:133
+msgid "Tamazight (Central Atlas)"
+msgstr "Tamaziɣt"
+
+#: ../inc/class-locales.php:134
+msgid "Uighur"
+msgstr "Uigurisch"
+
+#: ../inc/class-locales.php:135
+msgid "Ukrainian"
+msgstr "Ukrainisch"
+
+#: ../inc/class-locales.php:136
+msgid "Urdu"
+msgstr "Urdu"
+
+#: ../inc/class-locales.php:137
+msgid "Uzbek"
+msgstr "Usbekisch"
+
+#: ../inc/class-locales.php:138
+msgid "Vietnamese"
+msgstr "Vietnamesisch"
+
+#: ../inc/class-locales.php:139
+msgid "Chinese"
+msgstr "Chinesisch"
+
+#: ../inc/class-locales.php:140
+msgid "Chinese (Hong Kong)"
+msgstr "Chinesisch (Hongkong)"
+
+#: ../inc/class-locales.php:141
+msgid "Chinese (Taiwan)"
+msgstr "Chinesisch (Taiwan)"
+
+#~ msgid ""
+#~ "If your language isn't listed, you have to download the right version "
+#~ "from the WordPress repository: <a href=\"http://svn.automattic.com/"
+#~ "wordpress-i18n\">http://svn.automattic.com/wordpress-i18n</a>. Browser to "
+#~ "the language folder of your choice and get the <b>all</b> .mo files for "
+#~ "your WordPress Version from <i><b>tags/%1s/messages/</b></i> or from the "
+#~ "<i><b>trunk/messages/</b></i> folder. Upload them to the langauge folder "
+#~ "<i>%2s</i>. You should than be able to choose the new language (or after "
+#~ "a refresh of this page)."
+#~ msgstr ""
+#~ "Falls Ihre gewünschte Sprache hier nicht aufgeführt ist, müssen sie die "
+#~ "Sprache aus dem WordPress Repository downloaden: <a href=\"http://svn."
+#~ "automattic.com/wordpress-i18n\">http://svn.automattic.com/wordpress-i18n</"
+#~ "a>. Navigieren Sie in den Ordner der gewünschten Sprache und laden Sie "
+#~ "<b>alle</b> .mo Dateien für Ihre WordPress Version aus dem <i><b>tags/%1s/"
+#~ "messages/</b></i> oder aus dem <i><b>trunk/messages/</b></i> Ordner "
+#~ "runter. Laden Sie anschließend die Dateien in den Ordner <i>%2s</i> hoch. "
+#~ "Sie sollen jetzt in der Lage sein, die neue Sprache auszuwählen (oder "
+#~ "nach einen Neuladen dieser Seite)."

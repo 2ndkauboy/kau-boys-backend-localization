@@ -58,7 +58,7 @@ class Backend_Localization {
 
 		$this->plugin_url  = plugins_url( '/', __FILE__ );
 		$this->plugin_path = plugin_dir_path( __FILE__ );
-		$this->load_language( 'backend-localization' );
+		$this->load_language( 'kau-boys-backend-localization' );
 
 		// register autoloader
 		spl_autoload_register( array( $this, 'autoload' ) );
@@ -170,7 +170,7 @@ class Backend_Localization {
 		?>
 		<p>
 			<label>
-				<?php _e( 'Language', 'backend-localization' ) ?><br />
+				<?php _e( 'Language', 'kau-boys-backend-localization' ) ?><br />
 				<select name="kau-boys_backend_localization_language" id="user_email" class="input" style="width: 100%; color: #555;">
 					<?php foreach ( $installed_languages as $locale_value ) : ?>
 						<option value="<?php echo $locale_value ?>"<?php echo ( $backend_locale == $locale_value ) ? ' selected="selected"' : '' ?>>
@@ -187,7 +187,7 @@ class Backend_Localization {
 	 * Register the settings for the language fallback on the general settings page
 	 */
 	public function general_settings() {
-		add_settings_section( 'backend_localization',  __( 'Backend Localization Settings', 'backend-localization' ), array( $this, 'backend_localization_section' ), 'settings' );
+		add_settings_section( 'backend_localization',  __( 'Backend Localization Settings', 'kau-boys-backend-localization' ), array( $this, 'backend_localization_section' ), 'settings' );
 		add_settings_field( 'fallback_locale', __( 'Backend Localization Settings', 'language-fallback' ), array( $this, 'backend_localization_field' ), 'settings', 'language_fallback' );
 		register_setting( 'settings', 'backend_localization' );
 	}
@@ -198,7 +198,7 @@ class Backend_Localization {
 			setcookie( 'kau-boys_backend_localization_language', htmlspecialchars( $_REQUEST['kau-boys_backend_localization_language'] ), strtotime( '+30 day' ), '/' );
 		}
 
-		add_options_page( "Kau-Boy's Backend Localization settings", __( 'Backend Language', 'backend-localization' ), 'manage_options', 'backend_localization', array( $this, 'admin_settings' ) );
+		add_options_page( "Kau-Boy's Backend Localization settings", __( 'Backend Language', 'kau-boys-backend-localization' ), 'manage_options', 'backend_localization', array( $this, 'admin_settings' ) );
 
 		$installed_languages = $this->get_installed_languages();
 		$available_locales   = Backend_Localization_Locales::get_locales();
@@ -239,7 +239,7 @@ class Backend_Localization {
 
 		// do redirection for dashboard from the qTranslate Plugin (www.qianqin.de/qtranslate)
 		if ( isset( $_GET['godashboard'] ) ) {
-			echo '<h2>' . __( 'Switching Language', 'backend-localization' ) . '</h2>'
+			echo '<h2>' . __( 'Switching Language', 'kau-boys-backend-localization' ) . '</h2>'
 			     . sprintf( __( 'Switching language to %1$s... If the Dashboard isn\'t loading, use this <a href="%2$s" title="Dashboard">link</a>.', 'kau-boys-backend-localization' ), $available_translations[ $backend_locale ], admin_url() )
 			     . '<script type="text/javascript">document.location="' . admin_url() . '";</script>';
 			exit();
@@ -250,21 +250,21 @@ class Backend_Localization {
 			<h2>Kau-Boy's Backend Localization</h2>
 			<?php if ( $settings_saved ) : ?>
 				<div id="message" class="updated fade">
-					<p><strong><?php _e( 'Options saved.', 'backend-localization' ) ?></strong></p>
+					<p><strong><?php _e( 'Options saved.', 'kau-boys-backend-localization' ) ?></strong></p>
 				</div>
 			<?php endif ?>
 			<p>
-				<?php _e( 'Here you can customize the plugin for your needs.', 'bbackend-localization' ) ?>
+				<?php _e( 'Here you can customize the plugin for your needs.', 'kau-boys-backend-localization' ) ?>
 			</p>
 
 			<form method="post" action="">
 				<p>
 					<input type="checkbox" name="kau-boys_backend_localization_loginselect" id="kau-boys_backend_localization_loginselect"<?php echo ( $loginselect == 'on' ) ? ' checked="checked"' : '' ?>/>
-					<label for="kau-boys_backend_localization_loginselect"><?php _e( 'Hide language selection on login form', 'backend-localization' ) ?></label>
+					<label for="kau-boys_backend_localization_loginselect"><?php _e( 'Hide language selection on login form', 'kau-boys-backend-localization' ) ?></label>
 				</p>
 
 				<div>
-					<h2><?php _e( 'Available languages', 'backend-localization' ) ?></h2>
+					<h2><?php _e( 'Available languages', 'kau-boys-backend-localization' ) ?></h2>
 					<?php $installed_languages = $this->get_installed_languages() ?>
 					<?php foreach ( $installed_languages as $language ) : ?>
 						<input type="radio" value="<?php echo esc_attr( $language ) ?>" id="kau-boys_backend_localization_language_<?php echo esc_attr( $language ) ?>" name="kau-boys_backend_localization_language"<?php echo ( $backend_locale == $language ) ? ' checked="checked"' : '' ?> />
