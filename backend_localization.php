@@ -58,7 +58,6 @@ class Backend_Localization {
 
 		$this->plugin_url  = plugins_url( '/', __FILE__ );
 		$this->plugin_path = plugin_dir_path( __FILE__ );
-		$this->load_language( 'kau-boys-backend-localization' );
 
 		// register autoloader
 		spl_autoload_register( array( $this, 'autoload' ) );
@@ -72,6 +71,12 @@ class Backend_Localization {
 		add_action( 'login_form_locale', array( $this, 'localize_backend' ) );
 		add_action( 'login_head', array( $this, 'localize_backend' ) );
 		add_filter( 'locale', array( $this, 'localize_backend' ) );
+
+		/* load the own textdomain after the locale hook setup */
+		$this->load_language( 'kau-boys-backend-localization' );
+
+		/* unset the overwrite on init so that the locale on the "General" settings page is correct */
+		add_action( 'after_setup_theme', array( $this, 'remove_locale_filters' ) );
 	}
 
 	/**
@@ -115,6 +120,12 @@ class Backend_Localization {
 		if ( file_exists( $path ) ) {
 			include( $path );
 		}
+	}
+
+	public function remove_locale_filters() {
+		remove_action( 'login_form_locale', array( $this, 'localize_backend' ) );
+		remove_action( 'login_head', array( $this, 'localize_backend' ) );
+		remove_filter( 'locale', array( $this, 'localize_backend' ) );
 	}
 
 	public function get_installed_languages() {
