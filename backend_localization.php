@@ -1,14 +1,19 @@
 <?php
-/*
-Plugin Name: Backend Localization
-Plugin URI: http://kau-boys.com/230/wordpress/kau-boys-backend-localization-plugin
-Description: This plugin enables you to run your blog in a different language than the backend of your blog. So you can serve your blog using e.g. German as the default language for the users, but keep English as the language for the administration.
-Version: 2.1.7
-Requires at least: 3.2
-Tested up to: 4.1
-Author: Bernhard Kau
-Author URI: http://kau-boys.com
-*/
+/**
+ * Class Backend_Localization
+ *
+ * package kau-boys-backend-localization
+ *
+ * @wp-plugin
+ * Plugin Name: Backend Localization
+ * Plugin URI: http://kau-boys.com/230/wordpress/kau-boys-backend-localization-plugin
+ * Description: This plugin enables you to run your blog in a different language than the backend of your blog. So you can serve your blog using e.g. German as the default language for the users, but keep English as the language for the administration.
+ * Version: 2.1.7
+ * Requires at least: 3.2
+ * Tested up to: 4.1
+ * Author: Bernhard Kau
+ * Author URI: http://kau-boys.com
+ */
 
 add_action(
 	'plugins_loaded',
@@ -16,6 +21,11 @@ add_action(
 	1 // Sets the top priority of 1 to make sure that the load_textdomain call of all other plugins load the correct locale
 );
 
+/**
+ * Class Backend_Localization
+ *
+ * package kau-boys-backend-localization
+ */
 class Backend_Localization {
 
 	/**
@@ -132,18 +142,18 @@ class Backend_Localization {
 		$installed_languages = get_available_languages();
 
 		if ( ! in_array( 'en_US', $installed_languages ) ) {
-			$installed_languages[ ] = 'en_US';
+			$installed_languages[] = 'en_US';
 		}
 
 		return $installed_languages;
 	}
 
-	public function get_available_translations( ) {
+	public function get_available_translations() {
 		// get available translations for the translation api
 		require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
-		$available_translations =  wp_get_available_translations();
+		$available_translations = wp_get_available_translations();
 		// add en_US to the array
-		$available_translations['en_US'] = array('english_name' => 'English', 'native_name' => 'English');
+		$available_translations['en_US'] = array( 'english_name' => 'English', 'native_name' => 'English' );
 
 		return $available_translations;
 	}
@@ -157,7 +167,7 @@ class Backend_Localization {
 		}
 
 		if ( $file == $this_plugin ) {
-			$settings_link = '<a href="options-general.php?page=backend_localization">' . __( 'Settings' ) . '</a>';
+			$settings_link = '<a href="options-general.php?page=backend_localization">' . __( 'Settings', 'kau-boys-backend-localization' ) . '</a>';
 			array_unshift( $links, $settings_link );
 		}
 
@@ -181,7 +191,7 @@ class Backend_Localization {
 		?>
 		<p>
 			<label>
-				<?php _e( 'Language', 'kau-boys-backend-localization' ) ?><br />
+				<?php esc_html_e( 'Language', 'kau-boys-backend-localization' ) ?><br />
 				<select name="kau-boys_backend_localization_language" id="user_email" class="input" style="width: 100%; color: #555;">
 					<?php foreach ( $installed_languages as $locale_value ) : ?>
 						<option value="<?php echo $locale_value ?>"<?php echo ( $backend_locale == $locale_value ) ? ' selected="selected"' : '' ?>>
@@ -239,7 +249,7 @@ class Backend_Localization {
 			$settings_saved = true;
 		}
 
-		$loginselect    = get_option( 'kau-boys_backend_localization_loginselect' );
+		$loginselect = get_option( 'kau-boys_backend_localization_loginselect' );
 		$backend_locale = $this->get_locale();
 		$available_translations = Backend_Localization::get_instance()->get_available_translations();
 
@@ -261,24 +271,24 @@ class Backend_Localization {
 			<h2>Kau-Boy's Backend Localization</h2>
 			<?php if ( $settings_saved ) : ?>
 				<div id="message" class="updated fade">
-					<p><strong><?php _e( 'Options saved.', 'kau-boys-backend-localization' ) ?></strong></p>
+					<p><strong><?php esc_html_e( 'Options saved.', 'kau-boys-backend-localization' ) ?></strong></p>
 				</div>
 			<?php endif ?>
 			<p>
-				<?php _e( 'Here you can customize the plugin for your needs.', 'kau-boys-backend-localization' ) ?>
+				<?php esc_html_e( 'Here you can customize the plugin for your needs.', 'kau-boys-backend-localization' ) ?>
 			</p>
 
 			<form method="post" action="">
 				<p>
-					<input type="checkbox" name="kau-boys_backend_localization_loginselect" id="kau-boys_backend_localization_loginselect"<?php echo ( $loginselect == 'on' ) ? ' checked="checked"' : '' ?>/>
-					<label for="kau-boys_backend_localization_loginselect"><?php _e( 'Hide language selection on login form', 'kau-boys-backend-localization' ) ?></label>
+					<input type="checkbox" name="kau-boys_backend_localization_loginselect" id="kau-boys_backend_localization_loginselect"<?php checked( $loginselect, 'on' ); ?>/>
+					<label for="kau-boys_backend_localization_loginselect"><?php esc_html_e( 'Hide language selection on login form', 'kau-boys-backend-localization' ) ?></label>
 				</p>
 
 				<div>
-					<h2><?php _e( 'Available languages', 'kau-boys-backend-localization' ) ?></h2>
+					<h2><?php esc_html_e( 'Available languages', 'kau-boys-backend-localization' ) ?></h2>
 					<?php $installed_languages = $this->get_installed_languages() ?>
 					<?php foreach ( $installed_languages as $language ) : ?>
-						<input type="radio" value="<?php echo esc_attr( $language ) ?>" id="kau-boys_backend_localization_language_<?php echo esc_attr( $language ) ?>" name="kau-boys_backend_localization_language"<?php echo ( $backend_locale == $language ) ? ' checked="checked"' : '' ?> />
+						<input type="radio" value="<?php echo esc_attr( $language ) ?>" id="kau-boys_backend_localization_language_<?php echo esc_attr( $language ) ?>" name="kau-boys_backend_localization_language"<?php checked( $backend_locale, $language ) ?> />
 						<label for="kau-boys_backend_localization_language_<?php echo esc_attr( $language ) ?>">
 							<?php echo esc_html( $available_translations[ $language ]['native_name'] . ' / ' . $available_translations[ $language ]['english_name'] . ' (' . $language . ')' ) ?>
 						</label>
@@ -286,7 +296,7 @@ class Backend_Localization {
 					<?php endforeach ?>
 				</div>
 				<p class="submit">
-					<input class="button-primary" name="save" type="submit" value="<?php _e( 'Save Changes' ) ?>" />
+					<input class="button-primary" name="save" type="submit" value="<?php esc_attr_e( 'Save Changes' ) ?>" />
 				</p>
 			</form>
 		</div>
@@ -295,7 +305,7 @@ class Backend_Localization {
 	}
 
 	public function set_login_language() {
-		setcookie( 'kau-boys_backend_localization_language', "", strtotime( '-1 hour' ), '/' );
+		setcookie( 'kau-boys_backend_localization_language', '', strtotime( '-1 hour' ), '/' );
 		setcookie( 'kau-boys_backend_localization_language', htmlspecialchars( $_REQUEST['kau-boys_backend_localization_language'] ), strtotime( '+30 day' ), '/' );
 	}
 
@@ -329,4 +339,3 @@ class Backend_Localization {
 		return $locale;
 	}
 }
-

@@ -138,7 +138,7 @@ class Backend_Localization_Locales {
 			'vi'     => __( 'Vietnamese', 'kau-boys-backend-localization' ),
 			'zh_CN'  => __( 'Chinese', 'kau-boys-backend-localization' ),
 			'zh_HK'  => __( 'Chinese (Hong Kong)', 'kau-boys-backend-localization' ),
-			'zh_TW'  => __( 'Chinese (Taiwan)', 'kau-boys-backend-localization' )
+			'zh_TW'  => __( 'Chinese (Taiwan)', 'kau-boys-backend-localization' ),
 		);
 	}
 }
