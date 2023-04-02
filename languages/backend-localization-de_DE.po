@@ -1,9 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kau-boys-backend-localization\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 18:56+0100\n"
-"PO-Revision-Date: 2015-01-15 19:08+0100\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/kau-boys-backend-"
+"localization\n"
+"POT-Creation-Date: 2023-04-02T11:53:04+00:00\n"
+"PO-Revision-Date: 2023-04-02 13:56+0200\n"
 "Last-Translator: \n"
 "Language-Team: Bernhard Kau <bernhard@kau-boys.de>\n"
 "Language: de\n"
@@ -12,8 +13,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#. Plugin Name of the plugin
+msgid "Backend Localization"
+msgstr "Backend Localization"
+
+#. Plugin URI of the plugin
+msgid "http://kau-boys.com/230/wordpress/kau-boys-backend-localization-plugin"
+msgstr "http://kau-boys.com/230/wordpress/kau-boys-backend-localization-plugin"
+
+#. Description of the plugin
+msgid ""
+"This plugin enables you to run your blog in a different language than the "
+"backend of your blog. So you can serve your blog using e.g. German as the "
+"default language for the users, but keep English as the language for the "
+"administration."
+msgstr ""
+"Dieses Plugin ermöglicht es Ihnen, Ihren Blog in einer anderen Sprache zu "
+"betreiben als das Backend Ihres Blogs. So können Sie Ihren Blog z.B. in "
+"Deutsch als Standardsprache für die Benutzer betreiben, aber Englisch als "
+"Sprache für die Verwaltung beibehalten."
+
+#. Author of the plugin
+msgid "Bernhard Kau"
+msgstr "Bernhard Kau"
+
+#. Author URI of the plugin
+msgid "http://kau-boys.com"
+msgstr "http://kau-boys.com"
 
 #: backend_localization.php:25
 msgid "Afrikaans"
@@ -549,28 +578,19 @@ msgstr "Chinesisch (Taiwan)"
 
 #: backend_localization.php:165
 msgid "Backend Language"
-msgstr "Backend Sprache"
-
-#: backend_localization.php:193
-msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Backend-Sprache"
 
 #: backend_localization.php:220
 msgid "Switching Language"
 msgstr "Sprache wechseln"
 
 #: backend_localization.php:221
-#, php-format
 msgid ""
 "Switching language to %1$s... If the Dashboard isn't loading, use this <a "
 "href=\"%2$s\" title=\"Dashboard\">link</a>."
 msgstr ""
 "Wechsele Sprache zu %1$s... Wenn der Dashboard nicht laden sollte, klicke<a "
 "href=\"%2$s\" title=\"Dashboard\">hier</a>."
-
-#: backend_localization.php:231
-msgid "Options saved."
-msgstr ""
 
 #: backend_localization.php:235
 msgid "Here you can customize the plugin for your needs."
@@ -584,32 +604,67 @@ msgstr "Sprachen-Auswahl im Anmeldeformular verbergen"
 msgid "Available languages"
 msgstr "Verfügbare Sprachen"
 
-#: backend_localization.php:254
-#, php-format
+#: backend_localization.php:375
 msgid ""
-"If your language isn't listed, you have to download the right version from "
-"the WordPress repository: <a href=\"http://svn.automattic.com/wordpress-i18n"
-"\">http://svn.automattic.com/wordpress-i18n</a>. Browser to the language "
-"folder of your choice and get the <b>all</b> .mo files for your WordPress "
-"Version from <i><b>tags/%1s/messages/</b></i> or from the <i><b>trunk/"
-"messages/</b></i> folder. Upload them to the langauge folder <i>%2s</i>. You "
-"should than be able to choose the new language (or after a refresh of this "
-"page)."
+"Backend Localization <b>is deprecated and will be removed</b> from the "
+"plugin directory on <b>September 2, 2023</b>, 14 years after its first "
+"release. With WordPress version 4.7, released in December 2016, <a "
+"href=\"https://make.wordpress.org/core/2016/11/07/user-admin-languages-and-"
+"locale-switching-in-4-7/#content\">the main purpose of this plugin</a> was "
+"integrated into core. With WordPress version 5.9, released in February 2022, "
+"<a href=\"https://make.wordpress.org/core/2021/12/20/introducing-new-"
+"language-switcher-on-the-login-screen-in-wp-5-9/#content\">the only useful "
+"missing feature</a> was also integrated into core."
 msgstr ""
-"Falls Ihre gewünschte Sprache hier nicht aufgeführt ist, müssen sie die "
-"Sprache aus dem WordPress Repository downloaden: <a href=\"http://svn."
-"automattic.com/wordpress-i18n\">http://svn.automattic.com/wordpress-i18n</"
-"a>. Navigieren Sie in den Ordner der gewünschten Sprache und laden Sie "
-"<b>alle</b> .mo Dateien für Ihre WordPress Version aus dem <i><b>tags/%1s/"
-"messages/</b></i> oder aus dem <i><b>trunk/messages/</b></i> Ordner runter. "
-"Laden Sie anschließend die Dateien in den Ordner <i>%2s</i> hoch. Sie sollen "
-"jetzt in der Lage sein, die neue Sprache auszuwählen (oder nach einen "
-"Neuladen dieser Seite)."
+"Backend Localization <b>ist veraltet</b> und wird am <b>2. September 2023</"
+"b>, 14 Jahre nach seiner ersten Veröffentlichung, <b>aus dem Plugin-"
+"Verzeichnis entfernt</b>. Mit der WordPress-Version 4.7, veröffentlicht am "
+"Dezember 2016, wurde <a href=\"https://make.wordpress.org/core/2016/11/07/"
+"user-admin-languages-and-locale-switching-in-4-7/#content\">der Hauptzweck "
+"dieses Plugins</a> in den Core integriert. Mit der WordPress-Version 5.9, "
+"veröffentlicht im Februar 2022, wurde <a href=\"https://make.wordpress.org/"
+"core/2021/12/20/introducing-new-language-switcher-on-the-login-screen-in-"
+"wp-5-9/#content\">die einzige nützliche fehlende Funktion</a> ebenfalls in "
+"den Core integriert."
 
-#: backend_localization.php:258
-msgid "Save Changes"
+#: backend_localization.php:381
+msgid ""
+"Thanks to everyone who used the plugin, gave constructive feedback, rated it "
+"and send me messages on how it helped them with their sites. This was my "
+"second WordPress plugin, and it's surprising still has 2000+ active "
+"installations. If you see this message, you are one of them. But now feel "
+"free to remove it from your site. You can find my other plugins <a "
+"href=\"https://profiles.wordpress.org/kau-boy/#content-plugins\">on my "
+"WordPress profile page</a>."
 msgstr ""
+"Vielen Dank an alle, die das Plugin verwendet, konstruktives Feedback "
+"gegeben, es bewertet und mir Nachrichten geschickt haben, wie es ihnen bei "
+"ihren Websites geholfen hat. Dies war mein zweites WordPress-Plugin, und es "
+"ist überraschend, dass es immer noch mehr als 2000 aktive Installationen "
+"hat. Wenn du diese Nachricht siehst, bist du einer von ihnen. Aber jetzt "
+"kannst du es gerne von deiner Website entfernen. Du kannst meine anderen "
+"Plugins <a href=\"https://profiles.wordpress.org/kau-boy/#content-"
+"plugins\">auf meiner WordPress-Profilseite</a> finden."
 
-#: backend_localization.php:314
-msgid "Language"
-msgstr "Sprache"
+#~ msgid ""
+#~ "If your language isn't listed, you have to download the right version "
+#~ "from the WordPress repository: <a href=\"http://svn.automattic.com/"
+#~ "wordpress-i18n\">http://svn.automattic.com/wordpress-i18n</a>. Browser to "
+#~ "the language folder of your choice and get the <b>all</b> .mo files for "
+#~ "your WordPress Version from <i><b>tags/%1s/messages/</b></i> or from the "
+#~ "<i><b>trunk/messages/</b></i> folder. Upload them to the langauge folder "
+#~ "<i>%2s</i>. You should than be able to choose the new language (or after "
+#~ "a refresh of this page)."
+#~ msgstr ""
+#~ "Falls Ihre gewünschte Sprache hier nicht aufgeführt ist, müssen sie die "
+#~ "Sprache aus dem WordPress Repository downloaden: <a href=\"http://svn."
+#~ "automattic.com/wordpress-i18n\">http://svn.automattic.com/wordpress-i18n</"
+#~ "a>. Navigieren Sie in den Ordner der gewünschten Sprache und laden Sie "
+#~ "<b>alle</b> .mo Dateien für Ihre WordPress Version aus dem <i><b>tags/%1s/"
+#~ "messages/</b></i> oder aus dem <i><b>trunk/messages/</b></i> Ordner "
+#~ "runter. Laden Sie anschließend die Dateien in den Ordner <i>%2s</i> hoch. "
+#~ "Sie sollen jetzt in der Lage sein, die neue Sprache auszuwählen (oder "
+#~ "nach einen Neuladen dieser Seite)."
+
+#~ msgid "Settings"
+#~ msgstr "Einstellungen"
