@@ -10,6 +10,10 @@ This plugin enables you to run your blog in a different language than the backen
 
 == Description ==
 
+**Backend Localization is deprecated and will be removed from the plugin directory on September 2, 2023, 14 years after its first release. With WordPress version 4.7, released in December 2016, [the main purpose of this plugin](https://make.wordpress.org/core/2016/11/07/user-admin-languages-and-locale-switching-in-4-7/#content) was integrated into core. With WordPress version 5.9, released in February 2022, [the only useful missing feature](https://make.wordpress.org/core/2021/12/20/introducing-new-language-switcher-on-the-login-screen-in-wp-5-9/#content) was also integrated into core.**
+
+**Thanks to everyone who used the plugin, gave constructive feedback, rated it and send me messages on how it helped them with their sites. This was my second WordPress plugin, and it's surprising still has 2000+ active installations. If you see this message, you are one of them. But now feel free to remove it from your site. You can find my other plugins [on my WordPress profile page](https://profiles.wordpress.org/kau-boy/#content-plugins).**
+
 This plugin enables you to run your blog in a different language than the backend of your blog. So you can serve your blog using e.g. German as the default language for the users, but keep English as the language for the administration.
 You can choose the language you want to use from all installed language files or you can install additional languages.
 
