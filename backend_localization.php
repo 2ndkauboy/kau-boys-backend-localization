@@ -251,7 +251,7 @@
 						<br />
 					<?php endforeach ?>
 					<div class="description">
-						<?php echo sprintf( __( 'If your language isn\'t listed, you have to download the right version from the WordPress repository: <a href="http://svn.automattic.com/wordpress-i18n">http://svn.automattic.com/wordpress-i18n</a>. Browser to the language folder of your choice and get the <b>all</b> .mo files for your WordPress Version from <i><b>tags/%1s/messages/</b></i> or from the <i><b>trunk/messages/</b></i> folder. Upload them to the langauge folder <i>%2s</i>. You should than be able to choose the new language (or after a refresh of this page).', 'backend-localization' ), $wp_version, WP_LANG_DIR ) ?>
+						<?php echo sprintf( __( 'If your language isn\'t listed, you have to download the right version from the WordPress repository: <a href="http://svn.automattic.com/wordpress-i18n">http://svn.automattic.com/wordpress-i18n</a>. Browser to the language folder of your choice and get the <b>all</b> .mo files for your WordPress Version from <i><b>tags/%1s/messages/</b></i> or from the <i><b>trunk/messages/</b></i> folder. Upload them to the langauge folder <i>%2s</i>. You should than be able to choose the new language (or after a refresh of this page).', 'kau-boys-backend-localization' ), $wp_version, WP_LANG_DIR ) ?>
 					</div>
 				</div>
 				<p class="submit">
@@ -311,7 +311,7 @@
 		?>
 		<p>
 			<label>
-				<?php _e( 'Language', 'backend-localization' ) ?><br />
+				<?php _e( 'Language', 'kau-boys-backend-localization' ) ?><br />
 				<select name="kau-boys_backend_localization_language" id="user_email" class="input" style="width: 100%; color: #555;">
 					<?php foreach ( $backend_locale_array as $locale_value ) : ?>
 						<option value="<?php echo $locale_value ?>"<?php echo ( $backend_locale == $locale_value ) ? ' selected="selected"' : '' ?>>
@@ -358,6 +358,34 @@
 		setcookie( 'kau-boys_backend_localization_language', htmlspecialchars( $_REQUEST[ 'kau-boys_backend_localization_language' ] ), strtotime( '+30 day' ), '/' );
 	}
 
+	/**
+	 * Add deprecation notice in WP Admin.
+	 */
+	function backend_localization_deprecation_notice() {
+		// Only show notice for users who can actually uninstall or update plugins.
+		if ( ! current_user_can( 'delete_plugins' ) && ! current_user_can( 'update_plugins' ) ) {
+			return;
+		}
+
+		global $wp_version;
+		?>
+		<div class="notice notice-warning">
+			<p>
+				<?php echo wp_kses(
+					__( 'Backend Localization <b>is deprecated and will be removed</b> from the plugin directory on <b>September 2, 2023</b>, 14 years after its first release. With WordPress version 4.7, released in December 2016, <a href="https://make.wordpress.org/core/2016/11/07/user-admin-languages-and-locale-switching-in-4-7/#content">the main purpose of this plugin</a> was integrated into core. With WordPress version 5.9, released in February 2022, <a href="https://make.wordpress.org/core/2021/12/20/introducing-new-language-switcher-on-the-login-screen-in-wp-5-9/#content">the only useful missing feature</a> was also integrated into core.', 'backend-localization' ),
+					array( 'a' => array( 'href' => array() ), 'b' => array() )
+				); ?>
+			</p>
+			<p>
+				<?php echo wp_kses(
+					__( 'Thanks to everyone who used the plugin, gave constructive feedback, rated it and send me messages on how it helped them with their sites. This was my second WordPress plugin, and it\'s surprising still has 2000+ active installations. If you see this message, you are one of them. But now feel free to remove it from your site. You can find my other plugins <a href="https://profiles.wordpress.org/kau-boy/#content-plugins">on my WordPress profile page</a>.', 'backend-localization' ),
+					array( 'a' => array( 'href' => array() ) )
+				); ?>
+			</p>
+		</div>
+		<?php
+	}
+
 	add_action( 'init', 'init_backend_localization' );
 	add_action( 'admin_menu', 'backend_localization_admin_menu' );
 	add_action( 'admin_menu', 'backend_localization_save_setting' );
@@ -367,4 +395,5 @@
 	add_action( 'login_form', 'backend_localization_login_form' );
 	add_filter( 'plugin_action_links', 'backend_localization_filter_plugin_actions', 10, 2 );
 	add_filter( 'locale', 'localize_backend' );
+	add_action( is_network_admin() ? 'network_admin_notices' : 'admin_notices', 'backend_localization_deprecation_notice' );
 
